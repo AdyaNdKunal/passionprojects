@@ -56,7 +56,29 @@
     <link href="css/styles.css" rel="stylesheet" />
 
     <!-- Favicon  -->
-    <link rel="icon" href="images/passionProjectsLogo.PNG" />
+    <link rel="icon" href="images/logoPassionProjects.PNG" />
+    <style>
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+      .dropdown-content a {
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        padding: 8px 8px;
+      }
+      .my-dropdown:hover .dropdown-content {
+        display: block;
+      }
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+    </style>
   </head>
   <body>
     <!-- Header -->
@@ -76,7 +98,45 @@
 
         <!-- Social Links -->
         <div class="social-container">
-          <span class="fa-stack">
+          <!-- <h6
+            style="cursor: pointer"
+            data-toggle="collapse"
+            data-target="#demo"
+          >
+            Who are we?
+          </h6>
+          <div style="cursor: pointer" id="demo" class="collapse">
+            <div>Kunal Tiwari</div>
+            <div>Adya Tripathi</div>
+          </div> -->
+          <div
+            style="position: relative; display: inline-block"
+            class="my-dropdown"
+          >
+            <button
+              style="
+                font-size: 16px;
+                border: none;
+                background-color: transparent;
+              "
+              class="dropbtn"
+            >
+              Who are we?
+            </button>
+            <div class="dropdown-content">
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/adya-tripathi-5955b6a2/"
+                >Adya Tripathi <i class="fab fa-linkedin-in"></i
+              ></a>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/kunal-tiwari-1972a010b/"
+                >Kunal Tiwari <i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <!-- <span class="fa-stack">
             <a
               href="https://www.linkedin.com/in/kunal-tiwari-1972a010b/"
               target="_blank"
@@ -93,14 +153,14 @@
               <i class="fas fa-circle fa-stack-2x"></i>
               <i class="fab fa-linkedin-in fa-stack-1x"></i>
             </a>
-          </span>
+          </span> -->
         </div>
         <!-- end of social-container -->
         <!-- end of social links -->
       </div>
       <!-- end of logo-and-icons-container -->
       <!-- end of logo and icons container -->
-
+      <br />
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
